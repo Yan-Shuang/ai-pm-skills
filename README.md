@@ -13,6 +13,8 @@
 
 `ai-copy-reviewer`处理一份文案的主张核对与改稿；`generation-quality-evaluator`处理一批结果的评价标准、版本对照和回归。后者的离线脚本只汇总给定评分，不自动判断文本语义。可先看[3分钟演示说明](skills/generation-quality-evaluator/README.md)和[完整演示案例](skills/generation-quality-evaluator/demo/REPORT.md)。
 
+生成质量评测的方法参考作者简历所述的京东评测实践，将评测标准、错误归因与回归验证整理为可复用skill。本项目为个人作品；公开案例为重新构造的演示数据，非企业真实业务数据，也不代表企业背书。
+
 ## 安装到 Codex
 
 克隆本仓库后进入包根目录，也可下载 GitHub 的源码ZIP并解压：
@@ -82,7 +84,7 @@ v2：把线缆夹进理线夹，再分开线头。镜头：俯拍双手与桌面
 - [竞品拆解示例](skills/evidence-based-teardown/references/examples.md)
 - [生成质量评测：原始输入、两版输出、评分与回归](skills/generation-quality-evaluator/demo/REPORT.md)
 
-这些是预先编写、AI辅助生成的教学示范；案例为演示构造，非企业真实业务数据；口播、分数及反馈用于展示方法，不代表公司效果。实际前向测试回答另存于`tests/forward/`和`skills/generation-quality-evaluator/tests/forward/`。
+这些是预先编写、AI辅助生成的教学示范；口播、分数及反馈用于展示方法，不代表公司效果。实际前向测试回答另存于`tests/forward/`和`skills/generation-quality-evaluator/tests/forward/`。
 
 ## 所需能力与边界
 
