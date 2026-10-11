@@ -1,0 +1,70 @@
+{
+  "scope": "Structure only; no model quality score",
+  "official_validator": "Installed OpenAI Codex skill-creator quick_validate.py",
+  "official_validator_sha256": "ee6dba90f44d37171c5a6edb8095979c54919ff6822c1a907afca2e78c48738c",
+  "official_runs": [
+    {
+      "skill": "ai-copy-reviewer",
+      "exit_code": 0,
+      "stdout": "Skill is valid!",
+      "openai_yaml_parse": "valid"
+    },
+    {
+      "skill": "evidence-based-teardown",
+      "exit_code": 0,
+      "stdout": "Skill is valid!",
+      "openai_yaml_parse": "valid"
+    },
+    {
+      "skill": "requirement-to-acceptance",
+      "exit_code": 0,
+      "stdout": "Skill is valid!",
+      "openai_yaml_parse": "valid"
+    }
+  ],
+  "negative_fixture_checks": [
+    {
+      "fixture": "missing_name",
+      "rejected": true,
+      "errors": [
+        "ai-copy-reviewer: name与目录不一致"
+      ]
+    },
+    {
+      "fixture": "broken_reference",
+      "rejected": true,
+      "errors": [
+        "skills/ai-copy-reviewer/SKILL.md: 引用不存在: references/missing.md"
+      ]
+    },
+    {
+      "fixture": "duplicate_case",
+      "rejected": true,
+      "errors": [
+        "用例id无效或重复: CR01"
+      ]
+    },
+    {
+      "fixture": "implicit_disabled",
+      "rejected": true,
+      "errors": [
+        "ai-copy-reviewer: 未开启隐式调用"
+      ]
+    },
+    {
+      "fixture": "machine_path",
+      "rejected": true,
+      "errors": [
+        "README.md: 包含机器绝对路径"
+      ]
+    },
+    {
+      "fixture": "zip_mismatch",
+      "rejected": true,
+      "errors": [
+        "ZIP文件集合与包目录不一致",
+        "ZIP路径不安全"
+      ]
+    }
+  ]
+}

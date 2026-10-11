@@ -1,0 +1,7 @@
+interface:
+  display_name: "AI 文案质检"
+  short_description: "逐条核对产品卖点、事实依据与渠道风格，保留有依据的表达"
+  default_prompt: "用 $ai-copy-reviewer 检查以下资料和文案，给最小修订与可复制改稿。"
+policy:
+  allow_implicit_invocation: true
+

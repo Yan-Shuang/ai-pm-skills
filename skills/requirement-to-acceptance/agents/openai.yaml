@@ -1,0 +1,7 @@
+interface:
+  display_name: "需求转验收标准"
+  short_description: "把短需求转成可执行验收，标出假设、待确认项和相关异常路径"
+  default_prompt: "用 $requirement-to-acceptance 将以下短需求变成可执行验收标准。"
+policy:
+  allow_implicit_invocation: true
+

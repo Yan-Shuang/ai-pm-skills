@@ -1,0 +1,50 @@
+{
+  "method": "Independent forward tasks: executor saw SKILL.md and raw input; no expected checks or prior outputs.",
+  "model": "Host current model; exact model build and sampling parameters were not independently recorded.",
+  "materials": "Fictional, user-supplied text excerpts; no browsing or external API.",
+  "reviewer": "Primary assistant, using semantic checks in cases.json; not external expert review.",
+  "distinct_cases": 9,
+  "output_count": 11,
+  "round1": {
+    "skill_version": "Initial draft before the corrections recorded in TEST_REPORT.md",
+    "cases": [
+      "CR01",
+      "CR02",
+      "CR06",
+      "RA01",
+      "RA02",
+      "RA04",
+      "ET01",
+      "ET02",
+      "ET06"
+    ]
+  },
+  "round2": {
+    "skill_version": "Delivered revision",
+    "cases": [
+      "CR02",
+      "RA02"
+    ]
+  },
+  "not_run": [
+    "12 remaining behavioral cases",
+    "without-skill baseline",
+    "repeated sampling",
+    "installed-host implicit routing",
+    "live browsing",
+    "original screenshot reading"
+  ],
+  "files": [
+    "CR01-round1.md",
+    "CR02-round1.md",
+    "CR02-round2.md",
+    "CR06-round1.md",
+    "ET01-round1.md",
+    "ET02-round1.md",
+    "ET06-round1.md",
+    "RA01-round1.md",
+    "RA02-round1.md",
+    "RA02-round2.md",
+    "RA04-round1.md"
+  ]
+}

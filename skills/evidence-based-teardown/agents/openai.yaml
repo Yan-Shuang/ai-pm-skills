@@ -1,0 +1,7 @@
+interface:
+  display_name: "有证据的竞品拆解"
+  short_description: "按单个功能拆解竞品，区分事实、观察、推断与待验证改进假设"
+  default_prompt: "用 $evidence-based-teardown 依据以下材料拆解一个功能并标注证据。"
+policy:
+  allow_implicit_invocation: true
+
