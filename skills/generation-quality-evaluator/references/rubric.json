@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "rubric_id": "ip-script-v1",
+  "scale_min": 0,
+  "scale_max": 3,
+  "min_acceptable_mean": 2,
+  "regression_tolerance": 0,
+  "fact_dimension": "factual_accuracy",
+  "unknown_fact_type": "factual_unknown",
+  "error_types": [
+    "factual_contradiction",
+    "factual_unknown",
+    "persona_conflict",
+    "topic_drift",
+    "omission",
+    "repetition",
+    "unnatural",
+    "style_mismatch",
+    "oral_flow",
+    "production_infeasible",
+    "forbidden_expression"
+  ],
+  "dimensions": [
+    {
+      "id": "persona_match",
+      "label": "人设匹配",
+      "weight": 1,
+      "anchors": {
+        "0": "与明确人设/受众冲突，核心身份或立场错误",
+        "1": "部分符合但主要视角或称呼错位",
+        "2": "主体符合，存在不影响核心身份的局部偏差",
+        "3": "视角、受众和立场均符合明确人设，关键句有依据"
+      }
+    },
+    {
+      "id": "topic_relevance",
+      "label": "主题相关",
+      "weight": 1,
+      "anchors": {
+        "0": "没有回答指定主题或换了任务",
+        "1": "提到主题但主要内容偏题",
+        "2": "聚焦主题，局部旁枝可删",
+        "3": "各主要段落服务于指定主题与用户目标"
+      }
+    },
+    {
+      "id": "factual_accuracy",
+      "label": "事实准确",
+      "weight": 1,
+      "anchors": {
+        "0": "关键事实与有效来源明确矛盾",
+        "1": "有非关键的明确事实错误",
+        "2": "核对的事实受支持，个别范围表述需收窄",
+        "3": "所有可核对事实均在给定来源范围内，条件和限制保留；未知事实另记unverified"
+      }
+    },
+    {
+      "id": "completeness",
+      "label": "完整性",
+      "weight": 1,
+      "anchors": {
+        "0": "核心必要环节/信息缺失，无法完成任务",
+        "1": "漏一项重要明示要点",
+        "2": "必要要点齐全，衔接或局部细节可完善",
+        "3": "明示要点齐全且顺序清楚，无靠新增事实填充"
+      }
+    },
+    {
+      "id": "naturalness",
+      "label": "表达自然度",
+      "weight": 1,
+      "anchors": {
+        "0": "大量空泛/不通顺表达使意思无法理解",
+        "1": "多处僵硬或重复影响理解",
+        "2": "表达清楚，少量可自然化的句子",
+        "3": "具体、顺畅且符合目标受众的日常表达"
+      }
+    },
+    {
+      "id": "style_consistency",
+      "label": "风格一致",
+      "weight": 1,
+      "anchors": {
+        "0": "违反明示风格或禁用表达，主体口吻不一致",
+        "1": "多处口吻偏离要求",
+        "2": "整体一致，局部语气可修",
+        "3": "全稿持续符合给定风格样例/限制"
+      }
+    },
+    {
+      "id": "oral_fluency",
+      "label": "口播流畅",
+      "weight": 1,
+      "anchors": {
+        "0": "文本结构使口播难以理解/执行",
+        "1": "长句、术语或衔接明显妨碍试读",
+        "2": "按文本看可以口播，少量断句可改善",
+        "3": "句式、转场和用词适合给定口播任务；未试读时只做文本判断"
+      }
+    },
+    {
+      "id": "production_feasibility",
+      "label": "拍摄可执行性",
+      "weight": 1,
+      "anchors": {
+        "0": "关键动作违反明确设备/场地/安全条件，无法执行",
+        "1": "需明显额外资源或多个步骤不可执行",
+        "2": "已有资源可执行，局部镜头说明可改善",
+        "3": "镜头与动作均落在给定设备、人力、场地和资源范围内"
+      }
+    }
+  ],
+  "note": "AI辅助编写的起始锚点；等权与阈值未经真实业务校准。未知事实不能套0分锚点。"
+}

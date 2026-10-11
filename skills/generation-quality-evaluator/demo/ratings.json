@@ -1,0 +1,1297 @@
+{
+  "schema_version": 1,
+  "rubric_id": "ip-script-v1",
+  "rating_origin": "synthetic",
+  "note": "预先编写的演示评分用于演示计算；不是自动LLM评分真值或企业人工打分。",
+  "records": [
+    {
+      "case_id": "G01",
+      "version_id": "v1",
+      "rater_type": "synthetic",
+      "scores": {
+        "persona_match": {
+          "status": "assessed",
+          "score": 1,
+          "rationale": "促销口吻偏离平实整理师",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "家人们，这个理线夹100%防火，一夹就解决所有安全问题！",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "topic_relevance": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "提及理线夹但转成安全卖点",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "家人们，这个理线夹100%防火，一夹就解决所有安全问题！",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "factual_accuracy": {
+          "status": "assessed",
+          "score": 0,
+          "rationale": "100%防火与S1不具防火功能直接矛盾",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "家人们，这个理线夹100%防火，一夹就解决所有安全问题！",
+              "note": "口播段"
+            },
+            {
+              "ref": "S1",
+              "quote": "理线夹用于整理线缆，不具有防火功能。仅提供桌面整理用途，不保障电器安全。",
+              "note": "产品事实段"
+            }
+          ]
+        },
+        "completeness": {
+          "status": "assessed",
+          "score": 1,
+          "rationale": "未讲整理方法且承诺过度",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "家人们，这个理线夹100%防火，一夹就解决所有安全问题！",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "naturalness": {
+          "status": "assessed",
+          "score": 1,
+          "rationale": "空泛绝对表达多",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "家人们，这个理线夹100%防火，一夹就解决所有安全问题！",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "style_consistency": {
+          "status": "assessed",
+          "score": 1,
+          "rationale": "促销与绝对口吻违背要求",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "家人们，这个理线夹100%防火，一夹就解决所有安全问题！",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "oral_fluency": {
+          "status": "assessed",
+          "score": 1,
+          "rationale": "口号密集，按文本不便平实口播",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "家人们，这个理线夹100%防火，一夹就解决所有安全问题！",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "production_feasibility": {
+          "status": "assessed",
+          "score": 0,
+          "rationale": "无人机/两演员/正脸违反明确资源条件",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "无人机绕拍，两位演员正脸展示。",
+              "note": "镜头说明"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        }
+      },
+      "findings": [
+        {
+          "issue_id": "fire-claim",
+          "type": "factual_contradiction",
+          "status": "confirmed",
+          "severity": "critical",
+          "claim": "将非防火理线夹描述为100%防火，实质改变安全用途",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "100%防火",
+              "note": "口播第1句"
+            },
+            {
+              "ref": "S1",
+              "quote": "不具有防火功能",
+              "note": "产品限制"
+            }
+          ],
+          "recommendation": "删除防火承诺，保留只整理线缆及防火限制",
+          "possible_causes": [
+            "可能是吸睛目标压过来源限制；需检查Prompt或上下文实际传递，未证明内部原因"
+          ]
+        },
+        {
+          "issue_id": "camera-resource",
+          "type": "production_infeasible",
+          "status": "confirmed",
+          "severity": "major",
+          "claim": "镜头超过单人单手机、不拍人脸条件",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "无人机绕拍，两位演员正脸展示",
+              "note": "镜头段"
+            },
+            {
+              "ref": "brief",
+              "quote": "单人、单手机、俯拍桌面，不拍人脸",
+              "note": "设备人力条件"
+            }
+          ],
+          "recommendation": "改为俯拍双手整理",
+          "possible_causes": [
+            "可能未约束镜头资源，但不能仅凭输出确认原因"
+          ]
+        }
+      ],
+      "feedback": {
+        "source": "synthetic_example",
+        "adopted": false,
+        "edit_minutes": 7,
+        "revision_rounds": 2,
+        "note": "演示运营反馈；用于说明评分与实际使用反馈如何校准，非真实效果"
+      }
+    },
+    {
+      "case_id": "G01",
+      "version_id": "v2",
+      "rater_type": "synthetic",
+      "scores": {
+        "persona_match": {
+          "status": "assessed",
+          "score": 3,
+          "rationale": "平实指导初学者",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "桌面线缆挤在一起？把常用线夹进理线夹，再把线头分开摆好。这个夹子只做整理，不是防火设备。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "topic_relevance": {
+          "status": "assessed",
+          "score": 3,
+          "rationale": "围绕桌面理线任务",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "桌面线缆挤在一起？把常用线夹进理线夹，再把线头分开摆好。这个夹子只做整理，不是防火设备。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "factual_accuracy": {
+          "status": "assessed",
+          "score": 3,
+          "rationale": "事实在S1范围内并保留限制",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "桌面线缆挤在一起？把常用线夹进理线夹，再把线头分开摆好。这个夹子只做整理，不是防火设备。",
+              "note": "口播段"
+            },
+            {
+              "ref": "S1",
+              "quote": "理线夹用于整理线缆，不具有防火功能。仅提供桌面整理用途，不保障电器安全。",
+              "note": "产品事实段"
+            }
+          ]
+        },
+        "completeness": {
+          "status": "assessed",
+          "score": 3,
+          "rationale": "步骤与限制齐全",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "桌面线缆挤在一起？把常用线夹进理线夹，再把线头分开摆好。这个夹子只做整理，不是防火设备。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "naturalness": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "具体顺畅，仍可减少短句重复",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "桌面线缆挤在一起？把常用线夹进理线夹，再把线头分开摆好。这个夹子只做整理，不是防火设备。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "style_consistency": {
+          "status": "assessed",
+          "score": 3,
+          "rationale": "平实口吻一致",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "桌面线缆挤在一起？把常用线夹进理线夹，再把线头分开摆好。这个夹子只做整理，不是防火设备。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "oral_fluency": {
+          "status": "assessed",
+          "score": 3,
+          "rationale": "短句和转场适合文本口播，未实际试读",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "桌面线缆挤在一起？把常用线夹进理线夹，再把线头分开摆好。这个夹子只做整理，不是防火设备。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "production_feasibility": {
+          "status": "assessed",
+          "score": 3,
+          "rationale": "俯拍双手在单人单手机条件内",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "俯拍双手与桌面。",
+              "note": "镜头说明"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        }
+      },
+      "findings": [],
+      "feedback": {
+        "source": "synthetic_example",
+        "adopted": true,
+        "edit_minutes": 2,
+        "revision_rounds": 1,
+        "note": "演示运营反馈；用于说明评分与实际使用反馈如何校准，非真实效果"
+      }
+    },
+    {
+      "case_id": "G02",
+      "version_id": "v1",
+      "rater_type": "synthetic",
+      "scores": {
+        "persona_match": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "主体贴合人设",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "把常用线夹进理线夹，分开线头，桌面看起来更整齐。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "topic_relevance": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "聚焦桌面整理",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "把常用线夹进理线夹，分开线头，桌面看起来更整齐。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "factual_accuracy": {
+          "status": "assessed",
+          "score": 3,
+          "rationale": "已知事实与S1一致",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "把常用线夹进理线夹，分开线头，桌面看起来更整齐。",
+              "note": "口播段"
+            },
+            {
+              "ref": "S1",
+              "quote": "理线夹用于整理线缆；没有查找耗时实验数据。",
+              "note": "产品事实段"
+            }
+          ]
+        },
+        "completeness": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "必要整理动作已呈现",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "把常用线夹进理线夹，分开线头，桌面看起来更整齐。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "naturalness": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "表达清楚但较普通",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "把常用线夹进理线夹，分开线头，桌面看起来更整齐。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "style_consistency": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "整体平实",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "把常用线夹进理线夹，分开线头，桌面看起来更整齐。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "oral_fluency": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "按文本可口播，未实测时长",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "把常用线夹进理线夹，分开线头，桌面看起来更整齐。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "production_feasibility": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "俯拍桌面无需额外资源",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "俯拍桌面与整理动作。",
+              "note": "镜头说明"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        }
+      },
+      "findings": []
+    },
+    {
+      "case_id": "G02",
+      "version_id": "v2",
+      "rater_type": "synthetic",
+      "scores": {
+        "persona_match": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "主体贴合人设",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "把常用线夹进理线夹，查找时间节省80%，桌面看起来更整齐。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "topic_relevance": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "聚焦桌面整理",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "把常用线夹进理线夹，查找时间节省80%，桌面看起来更整齐。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "factual_accuracy": {
+          "status": "unverified",
+          "score": null,
+          "rationale": "没有耗时实验，80%待核实，不能判事实错误或填0",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "查找时间节省80%",
+              "note": "第1句"
+            },
+            {
+              "ref": "S1",
+              "quote": "没有查找耗时实验数据",
+              "note": "证据缺口"
+            }
+          ]
+        },
+        "completeness": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "必要整理动作已呈现",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "把常用线夹进理线夹，查找时间节省80%，桌面看起来更整齐。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "naturalness": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "表达清楚但较普通",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "把常用线夹进理线夹，查找时间节省80%，桌面看起来更整齐。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "style_consistency": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "整体平实",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "把常用线夹进理线夹，查找时间节省80%，桌面看起来更整齐。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "oral_fluency": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "按文本可口播，未实测时长",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "把常用线夹进理线夹，查找时间节省80%，桌面看起来更整齐。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "production_feasibility": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "俯拍桌面无需额外资源",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "俯拍桌面与整理动作。",
+              "note": "镜头说明"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        }
+      },
+      "findings": [
+        {
+          "issue_id": "time-percent",
+          "type": "factual_unknown",
+          "status": "pending",
+          "severity": "major",
+          "claim": "80%效果缺少来源支持",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "查找时间节省80%",
+              "note": "第1句"
+            },
+            {
+              "ref": "S1",
+              "quote": "没有查找耗时实验数据",
+              "note": "证据缺口"
+            }
+          ],
+          "recommendation": "删除80%效果，或先提供口径、样本与对照证据",
+          "possible_causes": [
+            "可能自行补出营销数字，也可能有未提供资料；当前不能定内部原因"
+          ]
+        },
+        {
+          "issue_id": "effect-number-rule",
+          "type": "forbidden_expression",
+          "status": "confirmed",
+          "severity": "major",
+          "claim": "未有实验证据仍使用效果数字，违背明示表达约束；数字本身仍待核实",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "查找时间节省80%",
+              "note": "第1句"
+            },
+            {
+              "ref": "brief",
+              "quote": "不许未经证实的效果数字",
+              "note": "明确禁止表达"
+            },
+            {
+              "ref": "S1",
+              "quote": "没有查找耗时实验数据",
+              "note": "已提供资料范围"
+            }
+          ],
+          "recommendation": "删除数字，保留已知整理动作",
+          "possible_causes": [
+            "可能遗漏了输出约束检查；需进一步验证，不能断言内部原因"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "G03",
+      "version_id": "v1",
+      "rater_type": "synthetic",
+      "scores": {
+        "persona_match": {
+          "status": "assessed",
+          "score": 3,
+          "rationale": "主体贴合人设",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "先把常用线夹进理线夹，再分开线头，桌面不再挤成一团。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "topic_relevance": {
+          "status": "assessed",
+          "score": 3,
+          "rationale": "聚焦桌面整理",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "先把常用线夹进理线夹，再分开线头，桌面不再挤成一团。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "factual_accuracy": {
+          "status": "assessed",
+          "score": 3,
+          "rationale": "已知事实与S1一致",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "先把常用线夹进理线夹，再分开线头，桌面不再挤成一团。",
+              "note": "口播段"
+            },
+            {
+              "ref": "S1",
+              "quote": "理线夹可夹持线缆，用于桌面整理。",
+              "note": "产品事实段"
+            }
+          ]
+        },
+        "completeness": {
+          "status": "assessed",
+          "score": 3,
+          "rationale": "必要整理动作已呈现",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "先把常用线夹进理线夹，再分开线头，桌面不再挤成一团。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "naturalness": {
+          "status": "assessed",
+          "score": 3,
+          "rationale": "具体动作简短，前后承接自然",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "先把常用线夹进理线夹，再分开线头，桌面不再挤成一团。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "style_consistency": {
+          "status": "assessed",
+          "score": 3,
+          "rationale": "整体平实",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "先把常用线夹进理线夹，再分开线头，桌面不再挤成一团。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "oral_fluency": {
+          "status": "assessed",
+          "score": 3,
+          "rationale": "按文本可口播，未实测时长",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "先把常用线夹进理线夹，再分开线头，桌面不再挤成一团。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "production_feasibility": {
+          "status": "assessed",
+          "score": 3,
+          "rationale": "俯拍桌面无需额外资源",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "单手机俯拍双手整理。",
+              "note": "镜头说明"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        }
+      },
+      "findings": []
+    },
+    {
+      "case_id": "G03",
+      "version_id": "v2",
+      "rater_type": "synthetic",
+      "scores": {
+        "persona_match": {
+          "status": "assessed",
+          "score": 3,
+          "rationale": "主体贴合人设",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "先把常用线夹进理线夹，再分开线头，桌面不再挤成一团。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "topic_relevance": {
+          "status": "assessed",
+          "score": 3,
+          "rationale": "聚焦桌面整理",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "先把常用线夹进理线夹，再分开线头，桌面不再挤成一团。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "factual_accuracy": {
+          "status": "assessed",
+          "score": 3,
+          "rationale": "已知事实与S1一致",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "先把常用线夹进理线夹，再分开线头，桌面不再挤成一团。",
+              "note": "口播段"
+            },
+            {
+              "ref": "S1",
+              "quote": "理线夹可夹持线缆，用于桌面整理。",
+              "note": "产品事实段"
+            }
+          ]
+        },
+        "completeness": {
+          "status": "assessed",
+          "score": 3,
+          "rationale": "必要整理动作已呈现",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "先把常用线夹进理线夹，再分开线头，桌面不再挤成一团。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "naturalness": {
+          "status": "assessed",
+          "score": 3,
+          "rationale": "具体动作简短，前后承接自然",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "先把常用线夹进理线夹，再分开线头，桌面不再挤成一团。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "style_consistency": {
+          "status": "assessed",
+          "score": 3,
+          "rationale": "整体平实",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "先把常用线夹进理线夹，再分开线头，桌面不再挤成一团。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "oral_fluency": {
+          "status": "assessed",
+          "score": 3,
+          "rationale": "按文本可口播，未实测时长",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "先把常用线夹进理线夹，再分开线头，桌面不再挤成一团。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "production_feasibility": {
+          "status": "assessed",
+          "score": 0,
+          "rationale": "关键访谈镜头违反单人单手机与不拍人脸条件，按给定资源无法执行",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "双机位拍摄两位演员的正脸访谈。",
+              "note": "镜头说明"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        }
+      },
+      "findings": [
+        {
+          "issue_id": "camera-resource",
+          "type": "production_infeasible",
+          "status": "confirmed",
+          "severity": "major",
+          "claim": "新增拍摄方式违背资源与不拍人脸约束",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "双机位拍摄两位演员的正脸访谈",
+              "note": "镜头说明"
+            },
+            {
+              "ref": "brief",
+              "quote": "单人、单手机、俯拍桌面，不拍人脸",
+              "note": "设备人力条件"
+            }
+          ],
+          "recommendation": "恢复单手机俯拍双手",
+          "possible_causes": [
+            "可能只约束文案事实而没有稳定约束镜头资源；待用对照Prompt验证"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "G04",
+      "version_id": "v1",
+      "rater_type": "synthetic",
+      "scores": {
+        "persona_match": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "主体贴合人设",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "把线缆夹进理线夹，分开线头，桌面更整齐。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "topic_relevance": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "聚焦桌面整理",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "把线缆夹进理线夹，分开线头，桌面更整齐。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "factual_accuracy": {
+          "status": "assessed",
+          "score": 3,
+          "rationale": "已知事实与S1一致",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "把线缆夹进理线夹，分开线头，桌面更整齐。",
+              "note": "口播段"
+            },
+            {
+              "ref": "S1",
+              "quote": "理线夹用于整理线缆。",
+              "note": "产品事实段"
+            }
+          ]
+        },
+        "completeness": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "必要整理动作已呈现",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "把线缆夹进理线夹，分开线头，桌面更整齐。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "naturalness": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "表达清楚但较普通",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "把线缆夹进理线夹，分开线头，桌面更整齐。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "style_consistency": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "整体平实",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "把线缆夹进理线夹，分开线头，桌面更整齐。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "oral_fluency": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "按文本可口播，未实测时长",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "把线缆夹进理线夹，分开线头，桌面更整齐。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "production_feasibility": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "俯拍桌面无需额外资源",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "俯拍桌面。",
+              "note": "镜头说明"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        }
+      },
+      "findings": []
+    },
+    {
+      "case_id": "G04",
+      "version_id": "v2",
+      "rater_type": "synthetic",
+      "scores": {
+        "persona_match": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "主体贴合人设",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "把线缆夹进理线夹，分开线头，桌面更整齐。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "topic_relevance": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "聚焦桌面整理",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "把线缆夹进理线夹，分开线头，桌面更整齐。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "factual_accuracy": {
+          "status": "assessed",
+          "score": 3,
+          "rationale": "已知事实与S1一致",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "把线缆夹进理线夹，分开线头，桌面更整齐。",
+              "note": "口播段"
+            },
+            {
+              "ref": "S1",
+              "quote": "理线夹用于整理线缆。",
+              "note": "产品事实段"
+            }
+          ]
+        },
+        "completeness": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "必要整理动作已呈现",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "把线缆夹进理线夹，分开线头，桌面更整齐。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "naturalness": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "表达清楚但较普通",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "把线缆夹进理线夹，分开线头，桌面更整齐。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "style_consistency": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "整体平实",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "把线缆夹进理线夹，分开线头，桌面更整齐。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "oral_fluency": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "按文本可口播，未实测时长",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "把线缆夹进理线夹，分开线头，桌面更整齐。",
+              "note": "口播段"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        },
+        "production_feasibility": {
+          "status": "assessed",
+          "score": 2,
+          "rationale": "俯拍桌面无需额外资源",
+          "evidence": [
+            {
+              "ref": "output",
+              "quote": "俯拍桌面。",
+              "note": "镜头说明"
+            },
+            {
+              "ref": "brief",
+              "quote": "IP：平实的桌面整理师，面向初学者。拍摄条件：单人、单手机、俯拍桌面，不拍人脸，不增加其他设备。任务：输出简短口播及镜头说明，教用理线夹整理桌面。仅使用S1事实，不许未经证实的效果数字。",
+              "note": "完整任务约束"
+            }
+          ]
+        }
+      },
+      "findings": []
+    }
+  ]
+}

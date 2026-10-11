@@ -1,0 +1,6 @@
+interface:
+  display_name: "生成质量评测"
+  short_description: "为生成结果建立证据评分，配对比较Prompt版本并检查改善与退化"
+  default_prompt: "用 $generation-quality-evaluator 评测以下样本与Prompt版本，标注依据、未知事实及回归风险。"
+policy:
+  allow_implicit_invocation: true
